@@ -1,0 +1,3 @@
+@import "../libs/bourbon/app/assets/stylesheets/bourbon";
+@include font-face("test","../fonts/opensans-regular" ,$file-formats: eot svg ttf woff);
+@include font-face("test","../fonts/opensans-bold/",bold);

@@ -1,0 +1,12 @@
+@import "components/vars";
+@import "components/fonts";
+@import "../libs/bootstrap/dist/css/bootstrap.min";
+
+p {
+	color: red;
+	font-family: test;
+}
+h2 {
+	font-family: test;
+	font-weight: bold;
+}
