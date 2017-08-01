@@ -45,9 +45,6 @@ body {
 .item {
     position: relative;
     text-align: center;
-    &-img {
-        background-color: rgba(#222533, .5);
-    }
     &-content {
         position: absolute;
         top: 0;
