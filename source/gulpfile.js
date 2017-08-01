@@ -41,7 +41,7 @@ gulp.task('sass', function() {
 gulp.task("js", function() {
     return gulp.src([
             'libs/jquery/dist/jquery.min.js',
-            'libs/bootstrap/dist/js/bootstrap.min.js'
+            'libs/bootstrap/dist/js/bootstrap.min.js',
             'js/**/*'
         ])
         .pipe(concat('main.min.js'))
