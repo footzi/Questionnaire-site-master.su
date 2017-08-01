@@ -1,3 +1,15 @@
-@import "../libs/bourbon/app/assets/stylesheets/bourbon";
-@include font-face("test","../fonts/opensans-regular" ,$file-formats: eot svg ttf woff);
-@include font-face("test","../fonts/opensans-bold/",bold);
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-regular/opensans-regular.eot');
+    src: local('☺'), url('../fonts/opensans-regular/opensans-regular.woff') format('woff'), url('../fonts/opensans-regular/opensans-regular.ttf') format('truetype'), url('../fonts/opensans-regular/opensans-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-bold/opensans-bold.eot');
+    src: local('☺'), url('../fonts/opensans-bold/opensans-bold.woff') format('woff'), url('../fonts/opensans-bold/opensans-bold.ttf') format('truetype'), url('../fonts/opensans-bold/opensans-bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

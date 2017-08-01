@@ -1,12 +1,77 @@
-@import "components/vars";
-@import "components/fonts";
 @import "../libs/bootstrap/dist/css/bootstrap.min";
-
-p {
-	color: red;
-	font-family: test;
+@import "components/fonts";
+@import "components/vars";
+@import "components/resest";
+body {
+    font: {
+        family: OpenSans;
+        size: 16px;
+    }
+    color:$whitecolor;
+    overflow-x: hidden;
 }
-h2 {
-	font-family: test;
-	font-weight: bold;
+
+//header
+.header {
+    position: relative;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    .navbar-nav {
+        margin-top: 40px;
+        >li>a {
+            font-size: 18px;
+            line-height: 1.06;
+            color: $whitecolor;
+            padding: 0 0 0 75px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    &-img {
+        background-color: rgba(#222533, .5);
+    }
+    &-content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin-top: 314px;
+        .collection {
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 9px;
+        }
+        .name-collection {
+            margin-top: 30px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 114px;
+            width: 200px;
+            height: 60px;
+            border: 2px solid #ffffff;
+            background-color: transparent;
+            border-radius: 2.6px;
+            font-size: 18px;
+            line-height: 1.06;
+        }
+    }
 }
