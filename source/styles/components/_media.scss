@@ -1,0 +1,43 @@
+@media only screen and (max-width:1199px) {}
+
+@media only screen and (max-width:992px) {
+    .navbar {
+        .navbar-nav {
+            margin-top: 20px;
+            >li>a {
+            font-size: 16px;
+            padding: 0 0 0 50px;
+            }
+        }
+        &-sold {
+            margin-top: 10px;
+            p {
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .banner {
+        img {
+        }
+        .h1 {
+            font-size: 15px;
+        }
+        .h2 {
+            font-size: 30px;
+        }
+        .button {
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+}
+
+@media only screen and (max-width:480px) {}
+
+@media only screen and (max-width:320px) {}

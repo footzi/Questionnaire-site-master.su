@@ -1,0 +1,44 @@
+.navbar
+    .container
+        .navbar-header
+            button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            //- img.img-responsive(src="images/logo.png" alt="Логотип")
+        .navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+                li
+                    a.navbar-link(href="#") Главная
+                li
+                    a.navbar-link(href="#") Магазин
+                li
+                    a.navbar-link(href="#") Бренды
+                li
+                    a.navbar-link(href="#") О магазине
+                li
+                    a.navbar-link(href="#") Контакты
+        .navbar-sold
+            p (0) Корзина
+.banner
+    #carousel.carousel.slide(data-ride="carousel", data-interval="50000")
+        .container-fluid
+            .row
+                .carousel-inner
+                    .item.slide1.active
+                        .item-content
+                            h2.h2 КОЛЛЕКЦИЯ СЕЗОНА
+                            h1.h1 БРУТАЛЬНЫЙ ДРОВОСЕК
+                            button.button ПОДРОБНЕЕ
+                        
+                    //- .item
+                    //-     img.img-responsive(src="images/banner.jpg")
+                    //- .item
+                    //-     img.img-responsive(src="images/banner.jpg")
+                    //- .item
+                    //-     img.img-responsive(src="images/banner.jpg")
+                ol.carousel-indicators
+                    li.active(data-target="#carousel" data-slide-to="0")
+                    li(data-target="#carousel" data-slide-to="1")
+                    li(data-target="#carousel" data-slide-to="2")
+                    li(data-target="#carousel" data-slide-to="3")

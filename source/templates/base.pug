@@ -1,0 +1,15 @@
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Тестовое задание site-master.su
+		link(rel="stylesheet" href="styles/main.css")
+	body
+		header.header
+			include components/header
+		main.main
+			section.model
+				include components/model
+			section.feedback
+				include components/feedback
+		script(src="js/main.min.js")

@@ -1,12 +1,222 @@
-@import "components/vars";
-@import "components/fonts";
 @import "../libs/bootstrap/dist/css/bootstrap.min";
+@import "components/fonts";
+@import "components/vars";
+@import "components/resest";
+body {
+    font: {
+        family: OpenSans;
+        size: 16px;
+    }
+    color:$whitecolor;
+    overflow-x: hidden;
+}
 
-p {
-	color: red;
-	font-family: test;
+//header
+.header {
+    position: relative;
 }
-h2 {
-	font-family: test;
-	font-weight: bold;
+
+.navbar {
+    position: absolute;
+    z-index: 2;
+    .navbar-nav {
+        margin-top: 40px;
+        >li>a {
+            font-size: 18px;
+            line-height: 1.06;
+            color: $whitecolor;
+            padding: 0 0 0 75px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+    .icon-bar {
+    	background-color: black;
+    }
+    img {
+    	width: 100%;
+    }
+    &-sold {
+    	margin-top: 30px;
+    	width: 100%;
+    	text-align: right;
+    	p {
+    		font-size: 24px;
+    		font-weight: bold;
+    	}
+    }
 }
+
+.banner {
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+	background-position: center center;
+	padding:20% 0 0 5%;
+    &-content {
+        width: 100%;
+        //margin-top: 15%;
+        .h1 {
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 9px;
+        }
+        .h2 {
+            margin-top: 30px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 10%;
+            width: 200px;
+            height: 60px;
+            border: 2px solid #ffffff;
+            background-color: transparent;
+            border-radius: 2.6px;
+            font-size: 18px;
+            line-height: 1.06;
+        }
+    }
+}
+.slide1 {
+	background-image: url(../images/banner.jpg);
+}
+.carousel-indicators{
+	li {
+		margin:0 5px;
+		background-color: $whitecolor;
+	}
+	.active {
+		margin: 0 5px;
+		background-color: transparent;
+		border:2px solid $whitecolor;
+
+	}
+}
+
+
+//main
+.main {
+	background-color: silver;
+	padding:40px 0;
+	text-align:center;
+}
+
+
+//model
+.model {
+	&-title {
+		hr {
+			width: 112px;
+			margin: 0 auto;
+			height: 3px;
+			background-color:$redcolor;
+		}
+		.h3 {
+			font-size: 40px;
+			color:$blackcolor;
+			margin:20px 0;
+		}
+	}
+	&-item {
+		margin-top: 10px;
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-img {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color:$whitecolor;
+
+		}
+		&-info {
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+			color: #777777;
+			font-size: 18px;
+  			line-height: 1.39;
+  			letter-spacing: 1.8px;
+  			text-align: left;
+  			.h4 {
+  				font-size: 30px;
+  				font-weight: bold;
+  				color: $redcolor;
+  			}
+  			p {
+  				margin: 10px 0;
+  			}
+  			hr {
+  				width: 30px;
+  				height: 1px;
+  				color:#000000;
+  			}
+		}
+		.model-item-button {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom:110px;
+			button {
+				width: 70px;
+				height: 50px;
+				color: $blackcolor;
+				border: 1px solid $blackcolor;
+				font-weight: bold;
+				background-color: transparent;
+				transition: all 0.5s;
+				&:hover {
+					background-color:$redcolor;
+				}
+			}
+			#buy {
+				width: 170px;
+			}
+		}
+	}
+}
+.active-btn {
+	background-color: $blackcolor !important;
+	color: $whitecolor !important;
+}
+//feedback
+.feedback {
+	&-content {
+		display:flex;
+	justify-content:space-around;
+		&-text {
+ 		color: black;
+ 		width: 369px;
+ 		height: 150px;
+ 		border: 1px solid green;
+		position: relative;
+		padding:10px 10px 10px;
+		 &:before, &:after {
+		 	content: ''; 
+		    position: absolute;
+			top:20px;
+		    left:-20px;
+		    border: 10px solid transparent;
+		    border-right: 10px solid green;
+		 }
+		 &:after {
+		 	border-right: 10px solid silver;
+    		left: -19px; 
+		 }
+ 	}	
+	}
+ 	
+  
+}
+@import "components/media"

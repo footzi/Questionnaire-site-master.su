@@ -97,8 +97,8 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
     gulp.watch('styles/**/*.scss', function(event, cb) {
         setTimeout(function() { gulp.start('sass'); }, 500)
     })
-    gulp.watch('js/**/*.js', ['js'])
-	gulp.watch('images/**/*', ['image'])
+    gulp.watch('js/**/*', ['js'])
+    gulp.watch('images/**/*', ['images'])
     gulp.watch('fonts/**/*', ['fonts'])
     gulp.watch('../public/*.html', browserSync.reload)
     gulp.watch('../public/js/**/*', browserSync.reload)
