@@ -13,3 +13,11 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-bold/opensans-italic.eot');
+    src: local('☺'), url('../fonts/opensans-italic/opensans-italic.woff') format('woff'), url('../fonts/opensans-italic/opensans-italic.ttf') format('truetype'), url('../fonts/opensans-italic/opensans-italic.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
