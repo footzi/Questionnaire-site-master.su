@@ -9,7 +9,7 @@ var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require("gulp-imagemin");
 var pngquant = require("imagemin-pngquant");
-
+var ghPages = require('gulp-gh-pages');
 
 //pug
 gulp.task('pug', function() {
@@ -85,11 +85,18 @@ gulp.task("images", function() {
 })
 
 //fonts
-
 gulp.task("fonts", function() {
     return gulp.src("fonts/**/*")
         .pipe(gulp.dest("../public/fonts"))
 });
+
+
+//gh-pages
+gulp.task('deploy', function() {
+    return gulp.src('../public')
+        .pipe(ghPages());
+});
+
 
 //watch
 gulp.task('watch', ['browserSync', 'sass'], function() {
