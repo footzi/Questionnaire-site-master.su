@@ -1,5 +1,8 @@
 Тестовое задание на вакансию "HTML-верстальщик" в http://site-master.su 
 =====================
+Прямая ссылка: 
+https://footzi.github.io/Questionnaire-site-master.su/public/
+***
 В папке public находится подготовленная к продакшену работа, там же лежит index.html
 ***
 В папке source размещен исходный код.

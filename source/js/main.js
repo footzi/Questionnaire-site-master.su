@@ -15,23 +15,22 @@ $(document).ready(function() {
         $(this).addClass("active-btn");
         var id = $(this).attr("id");
         var src = $(".model-item-img img");
-        console.log(id, src);
         switch (id) {
             case "m":
                 src.attr("src", "images/catalog/M.jpg");
-                src.width(70+"%")
+                src.width(70 + "%")
                 break;
             case "l":
                 src.attr("src", "images/catalog/L.jpg");
-                src.width(80+"%")
+                src.width(80 + "%")
                 break;
             case "xl":
                 src.attr("src", "images/catalog/XL.jpg");
-                src.width(90+"%")
+                src.width(90 + "%")
                 break;
             case "xxl":
                 src.attr("src", "images/catalog/XXL.jpg");
-                src.width(100+"%")
+                src.width(100 + "%")
                 break;
 
         }

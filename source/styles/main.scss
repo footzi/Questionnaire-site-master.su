@@ -47,7 +47,7 @@ body {
     }
     .logo {
         top: 10px;
-        left: 15px;
+        left: 5%;
         position: absolute;
         width: 141px;
         height: 123px;
@@ -130,7 +130,6 @@ body {
 //main
 .main {
     background-color: #f3f3f3;
-    // padding: 40px 0;
     text-align: center;
 }
 
@@ -163,12 +162,6 @@ body {
             flex-direction: column;
             justify-content: center;
             background-color: $whitecolor;
-            div {
-            	//width: 80%;
-            }
-            img {
-            	//width: 80%;
-            }
         }
         &-info {
             display: flex;
@@ -186,19 +179,22 @@ body {
                 font-weight: bold;
                 color: $redcolor;
             }
-            p {
-                margin: 10px 0;
-            }
             hr {
                 width: 30px;
                 height: 1px;
                 color: #000000;
             }
+            .title {
+                margin-top: 17px;
+                p {
+                    margin-bottom: 10px;
+                }
+            }
         }
         &-button {
             display: flex;
             justify-content: space-between;
-            margin-top: 50px;
+            margin-top: 77px;
             padding-bottom: 60px;
             button {
                 width: 70px;
@@ -226,49 +222,67 @@ body {
 
 //feedback
 .feedback {
-	padding-bottom: 20px;	
+    padding-bottom: 51px;
     &-content {
-    	margin-top: 50px;
+        margin-top: 106px;
         display: flex;
-        justify-content: space-around;
-        padding:0;
+        padding: 0;
+        justify-content: space-between;
         &-text {
-        	line-height: 1.5;
-  text-align: left;
-  color: #666666;
+            line-height: 1.5;
+            text-align: left;
+            color: #666666;
             width: 369px;
             height: 150px;
-            border: 1px solid green;
-            border-radius:5px;
+            border: 1px solid #cdcdcd;
+            border-radius: 3px;
             position: relative;
-            padding: 10px;
+            padding: 16px 0 0 25px;
             &:before,
             &:after {
                 content: '';
                 position: absolute;
-                top: 20px;
+                top: 17px;
                 left: -20px;
                 border: 10px solid transparent;
-                border-right: 10px solid green;
+                border-right: 10px solid #cdcdcd;
             }
             &:after {
                 border-right: 10px solid #f3f3f3;
                 left: -19px;
             }
         }
+        .square1,
+        .square2 {
+            border: 1px solid #cdcdcd;
+            border-radius: 2px;
+            position: absolute;
+        }
+        .square1 {
+            width: 350px;
+            height: 7px;
+            bottom: -5%;
+            left: 2.5%;
+        }
+        .square2 {
+            width: 310px;
+            height: 6px;
+            bottom: -7.8%;
+            left: 8%;
+        }
     }
 }
 
-
 //footer
 .footer {
-	padding: 45px 0 25px 0;
-	text-align:center;
-	p {	
-	  font-family: MyriadPro, OpenSans;
-	  font-size: 18px;
-	  line-height: 1.33;
-	  color: rgba(51, 51, 51, 0.6);
-	}
+    padding: 40px 0 25px 0;
+    text-align: center;
+    p {
+        font-family: MyriadPro;
+        font-size: 18px;
+        line-height: 1.33;
+        color: rgba(51, 51, 51, 0.6);
+    }
 }
+
 @import "components/media";
